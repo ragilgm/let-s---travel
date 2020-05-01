@@ -17,5 +17,5 @@ createPostForm.addEventListener('submit', (e) => {
     fetch('http://localhost:3000/posts', {
         method: 'POST',
         body: data
-    }).then((res) => res.text()).then((data) => window.history.go());
+    }).then((res) => res.text()).then((data) => alert('data has been save'), window.history.go());
 })

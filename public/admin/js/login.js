@@ -31,7 +31,7 @@ registerForm.addEventListener('submit', (e) => {
     let password = document.getElementById('register-password').value;
     let Repassword = document.getElementById('register-re-password').value;
     if(password !== Repassword){
-        alert('password yang adan masukan tidak sama');
+        alert('Password not match');
         return window.history.go();
     }
     fetch('http://localhost:3000/users/register', {

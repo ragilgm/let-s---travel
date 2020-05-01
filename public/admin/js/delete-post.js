@@ -1,7 +1,7 @@
 let articlesBlcok = document.querySelector('.articles');
 articlesBlcok.addEventListener('click', (e) => {
     if (e.target.classList.contains('btn-remove')) {
-        let konfirmasi = confirm('Apakah anda Yakin Ingin menghapus ini?');
+        let konfirmasi = confirm('Confirm for delete ?');
         if (konfirmasi) {
             let id = e.target.parentNode.parentNode.querySelector('.id').value;
             fetch('http://localhost:3000/posts/' + id, {
